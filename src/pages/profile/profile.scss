@@ -1,0 +1,48 @@
+.page-profile {
+
+	#profile-picture {
+		margin: 14% auto 1%;
+		display: block;
+	}
+
+	div.card {
+		margin: 10% auto 0%;
+		width: 65%;
+		border-style: solid;
+		border-color: #56d3b0;
+		padding: 0% 5% 6% 7%;
+	    position: relative;
+   		border-width: 2px;
+	}
+
+	div.profile-position {
+		position: absolute;
+		color: #56d3b0;
+		top: -15%;
+		left: -0%
+	}
+
+	p.txt-center {
+		text-align: center;
+		margin-top: 4%;
+		margin-bottom: 15%;
+	}
+
+	div.courses {
+		width: 30%;
+	    display: inline-block;
+    	vertical-align: top;
+	}
+
+	div.subjects {
+		width: 60%;
+		padding-left: 10%;
+	    display: inline-block;
+		
+		p {
+			margin: 0;
+		}
+	}
+
+
+}

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="navycolor">
+    <img src="assets/logo/bcdlogo.png" height="50" style="padding: 0% 0% 0% 36%;">
+    <ion-buttons right style="padding-right: 5%">
+<!--       <button ion-button clear color="whitecolor" >
+        <ion-icon name="add" is-active="false"></ion-icon>
+      </button> -->
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-notifications">
+
+  <ion-list>
+
+    <ion-list-header><b>Notifications</b></ion-list-header>
+
+    <ion-item (click)="buttonClick()">
+      <ion-avatar item-left>
+        <img src="assets/logo/PJ.png">
+      </ion-avatar>
+      <h2>Have you done your project?</h2>
+      <p>Create an application using Ionic</p>
+      <p>ITCS424 - Wireless and Mobile Computing</p>
+      <p>Due: March 26, 2017</p>
+      <ion-note item-right id="due-time">05:00 PM</ion-note>
+    </ion-item>
+
+    <ion-item (click)="buttonClick()">
+      <ion-avatar item-left>
+        <img src="assets/logo/PR.png">
+      </ion-avatar>
+      <h2>Do you prepare for presentation next Thuesday?</h2>
+      <p>Compare and contrast</p>
+      <p>ITLG302 - Academic Writing</p>
+      <p>Due: March 30, 2017</p>
+      <ion-note item-right id="due-time">06:00 PM</ion-note>
+    </ion-item>
+
+    <ion-item >
+      <ion-avatar item-left>
+        <img src="assets/logo/HW.png">
+      </ion-avatar>
+      <h2>Do you finish your work?</h2>
+      <p>Lab 2: Building a Ethernet Crossover Cable</p>
+      <p>ITCS424 - Wireless and Mobile Computing</p>
+      <p>Due: April 3, 2017</p>
+      <ion-note item-right id="due-time">23:50 PM</ion-note>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
