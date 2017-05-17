@@ -6,6 +6,8 @@ import { CalendarPage } from '../pages/calendar/calendar';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AddPage } from '../pages/add/add';
+import { bcdService } from '../services/bcdpn4-service';
 
 @NgModule({
   declarations: [
@@ -14,20 +16,28 @@ import { TabsPage } from '../pages/tabs/tabs';
     CalendarPage,
     NotificationsPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    AddPage
   ],
+
   imports: [
     IonicModule.forRoot(MyApp)
   ],
+
   bootstrap: [IonicApp],
+
   entryComponents: [
     MyApp,
     TasksPage,
     CalendarPage,
     NotificationsPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    AddPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+
+  providers: [{provide:ErrorHandler, useClass: IonicErrorHandler}, bcdService]
 })
+
+
 export class AppModule {}
